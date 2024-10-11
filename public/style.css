@@ -1,0 +1,149 @@
+/* style.css */
+
+body {
+  background-color: rgb(120, 213, 253);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+section {
+  background: rgb(255, 255, 255);
+  width: 40%;
+  text-align: left;
+  padding:10px 0;
+  border-radius: 15px;
+  max-width:1000px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+}
+
+.addbottun-position {
+  text-align: center;
+}
+
+button.add-button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 130px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid #27acd9;
+    background: #27acd9;
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button.add-button:hover {
+    color: #27acd9;
+    background: #fff;
+}
+
+ul {
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+li {
+  color: #2d8fdd;
+  border-left: solid 6px #2d8fdd;/*左側の線*/
+  border-right: solid 6px #2d8fdd;/*左側の線*/
+  background: #f1f8ff;/*背景色*/
+  margin-bottom: 5px;/*下のバーとの余白*/
+  line-height: 1.5;
+  padding: 0.5em;
+  list-style-type: none!important;/*ポチ消す*/
+  text-align: center;
+}
+
+p {
+  color: #000000;
+  border-left: solid 6px #2d8fdd;/*左側の線*/
+  border-right: solid 6px #2d8fdd;/*左側の線*/
+  background: #f1f8ff;/*背景色*/
+  margin-bottom: 18px;/*下のバーとの余白*/
+  line-height: 1.5;
+  padding: 0.5em;
+  list-style-type: none!important;/*ポチ消す*/
+  text-align: center;
+}
+
+form{
+text-align: center;
+margin-bottom: 10px;
+}
+
+button.button-show-update {
+display: block;
+text-decoration: none;
+width: 130px;
+margin: auto;
+font-weight: bold;
+font-size: 14px;
+border: 2px solid #27acd9;
+background: #27acd9;
+color: #fff;
+transition: 0.5s;
+border-radius: 10px;
+cursor: pointer;
+}
+
+button.button-show-update:hover {
+  color: #27acd9;
+  background: #fff;
+}
+
+form.edit-layout{
+display: flex;
+flex-direction: column;
+}
+
+div.newmemo{
+display: flex;
+flex-direction: column;
+}
+
+form.edit-layout {
+  padding: 10px 50px 0px 50px;
+}
+
+button.add-memo {
+  display: block;
+  text-decoration: none;
+  width: 130px;
+  margin: auto;
+  font-weight: bold;
+  font-size: 14px;
+  border: 2px solid #27acd9;
+  background: #27acd9;
+  color: #fff;
+  transition: 0.5s;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+  
+button.add-memo:hover {
+    color: #27acd9;
+    background: #fff;
+}

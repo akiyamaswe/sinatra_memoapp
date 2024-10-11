@@ -1,0 +1,19 @@
+<section>
+  <div class="addbottun-position">
+    <h1>
+      <a href="/">メモアプリ</a>
+    </h1>
+  </div>
+</section>
+<section>
+  <div>
+ <form class="edit-layout" action="/memo/<%= params[:id] %>" method="POST">
+    <div>タイトル</div>
+    <input type="hidden" name="_method" value="PATCH">
+    <input class="title-edit-memo" name="title" value='<%= CGI.escapeHTML(@memo['title']) %>' required>
+    <div>内容</div>
+    <textarea class="content-edit-memo" name="content" required><%= CGI.escapeHTML(@memo['content']) %></textarea>
+    <button class="add-memo" type="submit">保存する</button>
+  </form>
+  </div>
+</section>
