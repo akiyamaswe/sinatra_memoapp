@@ -1,1 +1,1 @@
-# sinatra_memoapp
+# sinatra-memoapp
