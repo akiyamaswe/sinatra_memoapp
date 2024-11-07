@@ -7,10 +7,10 @@
   <p class="title-show-font"><%= CGI.escapeHTML(@memo['title']) %></p>
   <p><%= CGI.escapeHTML(@memo['content']).gsub(/\r/, '<br/>') %></p>
   <div class="button-show-layout">
-    <form class="button-show-update" action="/memo/<%= params[:id] %>/edit" method="GET">
+    <a class="button-show-update" action="/memo/<%= params[:id] %>/edit" method="GET">
       <button class="button-show-update" type="submit">編集</button>
     </form>
-    <form class="button-show-update" action="/memo/<%= params[:id] %>" method="POST">
+    <a class="button-show-update" action="/memo/<%= params[:id] %>" method="POST">
       <input type="hidden" name="_method" value="DELETE">
       <button class="button-show-update" type="submit">削除</button>
     </form>

@@ -12,8 +12,8 @@ def load_memo_json
   File.open(PATH_MEMO) { |file| JSON.parse(file.read) }
 end
 
-def write_memo_to_json(memo_deta)
-  File.open(PATH_MEMO, 'w') { |file| JSON.dump(memo_deta, file) }
+def write_memo_to_json(stored_memo_records)
+  File.open(PATH_MEMO, 'w') { |file| JSON.dump(stored_memo_records, file) }
 end
 
 get '/' do
@@ -34,18 +34,18 @@ post '/memo' do
   title = params[:title]
   content = params[:content]
 
-  memo_deta = load_memo_json
-  id = memo_deta.empty? ? '1' : (memo_deta.keys.map(&:to_i).max + 1).to_s
-  memo_deta[id] = { 'title' => title, 'content' => content }
-  write_memo_to_json(memo_deta)
+  stored_memo_records = load_memo_json
+  id = stored_memo_records.empty? ? '1' : (stored_memo_records.keys.map(&:to_i).max + 1).to_s
+  stored_memo_records[id] = { title:, content: }
+  write_memo_to_json(stored_memo_records)
 
   redirect '/'
 end
 
 delete '/memo/:id' do
-  memo_deta = load_memo_json
-  memo_deta.delete(params[:id])
-  write_memo_to_json(memo_deta)
+  stored_memo_records = load_memo_json
+  stored_memo_records.delete(params[:id])
+  write_memo_to_json(stored_memo_records)
 
   redirect '/'
 end
@@ -59,9 +59,9 @@ patch '/memo/:id' do
   title = params[:title]
   content = params[:content]
 
-  memo_deta = load_memo_json
-  memo_deta[params[:id]] = { 'title' => title, 'content' => content }
-  write_memo_to_json(memo_deta)
+  stored_memo_records = load_memo_json
+  stored_memo_records[params[:id]] = { title:, content: }
+  write_memo_to_json(stored_memo_records)
 
   redirect "/memo/#{params[:id]}"
 end
