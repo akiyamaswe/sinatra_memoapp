@@ -38,30 +38,30 @@ h1 {
 }
 
 button.add-button {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    width: 130px;
-    margin: auto;
-    font-weight: bold;
-    font-size: 14px;
-    border: 2px solid #27acd9;
-    background: #27acd9;
-    color: #fff;
-    transition: 0.5s;
-    border-radius: 10px;
-    cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 130px;
+  margin: auto;
+  font-weight: bold;
+  font-size: 14px;
+  border: 2px solid #27acd9;
+  background: #27acd9;
+  color: #fff;
+  transition: 0.5s;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 button.add-button:hover {
-    color: #27acd9;
-    background: #fff;
+  color: #27acd9;
+  background: #fff;
 }
 
 ul {
-    padding: 0;
-    position: relative;
-    text-align: center;
+  padding: 0;
+  position: relative;
+  text-align: center;
 }
 
 li {
@@ -88,24 +88,24 @@ p {
   text-align: center;
 }
 
-form{
-text-align: center;
-margin-bottom: 10px;
+form {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 button.button-show-update {
-display: block;
-text-decoration: none;
-width: 130px;
-margin: auto;
-font-weight: bold;
-font-size: 14px;
-border: 2px solid #27acd9;
-background: #27acd9;
-color: #fff;
-transition: 0.5s;
-border-radius: 10px;
-cursor: pointer;
+  display: block;
+  text-decoration: none;
+  width: 130px;
+  margin: auto;
+  font-weight: bold;
+  font-size: 14px;
+  border: 2px solid #27acd9;
+  background: #27acd9;
+  color: #fff;
+  transition: 0.5s;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 button.button-show-update:hover {
@@ -114,13 +114,13 @@ button.button-show-update:hover {
 }
 
 form.edit-layout{
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 div.newmemo{
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 form.edit-layout {
@@ -144,6 +144,12 @@ button.add-memo {
 }
   
 button.add-memo:hover {
-    color: #27acd9;
-    background: #fff;
+  color: #27acd9;
+  background: #fff;
+}
+
+.button-show-layout {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
 }

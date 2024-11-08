@@ -12,8 +12,8 @@ def load_memo_json
   File.open(PATH_MEMO) { |file| JSON.parse(file.read) }
 end
 
-def write_memo_to_json(stored_memo_records)
-  File.open(PATH_MEMO, 'w') { |file| JSON.dump(stored_memo_records, file) }
+def write_memo_to_json(memos)
+  File.open(PATH_MEMO, 'w') { |file| JSON.dump(memos, file) }
 end
 
 get '/' do
