@@ -7,9 +7,7 @@
   <p class="title-show-font"><%= CGI.escapeHTML(@memo['title']) %></p>
   <p><%= CGI.escapeHTML(@memo['content']).gsub(/\r/, '<br/>') %></p>
   <div class="button-show-layout">
-    <a class="button-show-update" href="/memo/<%= params[:id] %>/edit">
-      <button class="button-show-update" type="submit">編集</button>
-    </a>
+    <a class="link-show" href="/memo/<%= params[:id] %>/edit">編集</a>
     <form class="button-show-update" action="/memo/<%= params[:id] %>" method="POST">
       <input type="hidden" name="_method" value="DELETE">
       <button class="button-show-update" type="submit">削除</button>
